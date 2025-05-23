@@ -6,6 +6,7 @@ body {
     width: 95vw;
     margin: auto;
     text-align: justify;
+    padding: 20px 50px;
 }
 
 .container-fluid {
