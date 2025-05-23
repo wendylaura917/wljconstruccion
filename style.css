@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 95vw;
+    margin: auto;
+    text-align: justify;
+}
+
+.container-fluid {
+    font-size: larger;
+    font-weight: 400;
+    background-color: white;
+
+}
+
+
+nav a {
+    text-decoration: solid;
+    font-size: medium;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 5px 15px;
+}
+
+nav a:hover {
+    background-color: #df9e3b62;
+    border-radius: 20px;
+    font-weight: 700;
+
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.contenedornosotros {
+    width: 95vw;
+    margin: auto 10px;
+    padding: 10px;
+    text-align: justify;
+    background-color: white;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: auto;
+    padding: 70px;
+    align-content: center;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    padding-top: 120%;
+    /* relación de aspecto */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.card-front {
+    background-color: #fff;
+}
+
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    background-color: #292929;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contenedorservicios {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container_calculadora {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-left: 5px solid #007BFF;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+canvas {
+    max-width: 700px;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}

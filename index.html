@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shurtcut icon" href="./icono/icono.jpeg">
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Proyecto Constructora WLJ</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div class="container-fluid">
+            <!--Barra de navegacion con icono incluido-->
+
+            <nav class="navbar navbar-expand-lg bg-body" data-bs-theme>
+                <!--Esta linea nos permite dar estilo a barra de naveg-->
+                <div class="container-fluid">
+                    <a href="#"><img src="./icono/icono.jpeg" alt="icono"
+                            width="80px" height="70px"
+                            style="border-radius: 80%; margin-right: 20px;"></a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdoun-toggle"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-current="page"
+                                    style="color:rgb(192, 107, 2);"
+                                    href="servicios.html">Servicios</a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item"
+                                            href="servicios.html"
+                                            style="color:rgb(192, 107, 2);"">Ingenieria
+                                            y Construccion </a></li>
+                                    <hr class="dropdown-divider">
+
+                                    <li><a class="dropdown-item"
+                                            href="servicios.html"
+                                            style="color:rgb(192, 107, 2);">Infraestructura
+                                        </a></li>
+                                    <li><a class="dropdown-item"
+                                            href="servicios.html"
+                                            style="color:rgb(192, 107, 2);">Construccion
+                                            de Vias</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="nosotros.html"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    style="color:rgb(192, 107, 2);">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="nosotros.html"
+                                            onclick="mostrarContenido('QuienesSomos')"
+                                            style="color:rgb(192, 107, 2);">Quienes
+                                            Somos </a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="nosotros.html"
+                                            onclick="mostrarContenido('mision')"
+                                            style="color:rgb(192, 107, 2);">Mision</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="nosotros.html"
+                                            onclick="mostrarContenido('vision')"
+                                            style="color:rgb(192, 107, 2);">Vision</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="nosotros.html"
+                                            onclick="mostrarContenido('NuestroProposito')"
+                                            style="color:rgb(192, 107, 2);">Nuestro
+                                            Proposito</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="nosotros.html"
+                                            onclick="mostrarContenido('valores')"
+                                            style="color:rgb(192, 107, 2);">Valores</a></li>
+                                </ul>
+
+                            </li>
+                            <hr class="dropdown-divider">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="asesoria.html"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    style="color:rgb(192, 107, 2);">
+                                    Asesorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="asesoria.html"
+                                            style="color:rgb(192, 107, 2);">Formulario</a></li>
+                                </ul>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="portafolio.html"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        onclick="mostrarContenido('QuienesSomos')"
+                                        style="color:rgb(192, 107, 2);">
+                                        Portafolio
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="portafolio.html"
+                                                onclick="mostrarContenido('QuienesSomos')"
+                                                style="color:rgb(192, 107, 2);">Evidencias
+                                            </a></li>
+                                        <hr class="dropdown-divider">
+                                        <li><a class="dropdown-item"
+                                                href="portafolio.html"
+                                                onclick="mostrarContenido('QuienesSomos')"
+                                                style="color:rgb(192, 107, 2);">Fotos</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="portafolio.html"
+                                                onclick="mostrarContenido('QuienesSomos')"
+                                                style="color:rgb(192, 107, 2);">Videos
+                                                de Proyectos</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search"
+                                    placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-warning"
+                                    type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <!--Carrusel de imagenes principal-->
+                <div id="carouselExampleCaptions" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <!--Esta propiedad data-bs-ride me permite automatizar el carrusel de imagenes-->
+                    <div class="carousel-indicators">
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"
+                            data-bs-interval="2000">
+                            <!--tomo de bs el data-bs interval para dar velocidad al cambio de imagenes, en cada img-->
+                            <img src="./ImagenesCarrusel1/001.jpg"
+                                class="d-block w-100" alt="img1"
+                                style="max-height: 500px;">
+                            <!--La propiedad Style="max-height" me hace las imagenes responsivas-->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>WLJ Nuestro compromiso con la excelencia
+                                        y la responsabilidad.</h5></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./ImagenesCarrusel1/002.jpg"
+                                class="d-block w-100" alt="img2"
+                                style="max-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>Tomamos sueños, construimos
+                                        realidades.</h5></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./ImagenesCarrusel1/003.jpg"
+                                class="d-block w-100" alt="img3"
+                                style="max-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>Siempre ofrecemos seguridad y
+                                        confianza.</h5></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./ImagenesCarrusel1/004.jpg"
+                                class="d-block w-100" alt="img2"
+                                style="max-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>Atencion personalizada.</h5></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./ImagenesCarrusel1/005.jpg"
+                                class="d-block w-100" alt="img2"
+                                style="max-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>Servicio personalizado.</h5></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./ImagenesCarrusel1/006.jpg"
+                                class="d-block w-100" alt="img2"
+                                style="max-height: 500px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Proyectos</h3>
+                                <p><h5>Te asesoramos con ideas
+                                        innovadoras.</h5></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">next</span>
+                    </button>
+                </div><!--Fin carrusel de imagenes-->
+            </div>
+
+            <div class="card shadow mt-5 mx-auto mb-4 border-0"
+                style="max-width: 1024px; background-color: #f8f9fa;">
+                <div class="row g-0">
+                    <!-- Imagen / Logo -->
+                    <div
+                        class="col-md-4 d-flex align-items-center justify-content-center p-3"
+                        style="background-color: #f8f9fa;">
+                        <img src="./icono/icono-removebg-preview.png"
+                            class="img-fluid"
+                            alt="Logo WLJ Construcciones"
+                            style="max-height: 200px;">
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="col-md-8">
+                        <div class="card-body p-4">
+                            <h3
+                                class="card-title text-center mb-3 fw-bold text-uppercase"
+                                style="color: #c16a24;">
+                                WLJ Construcciones
+                            </h3>
+                            <p class="card-text text-muted text-justify">
+                                Somos especialistas en el desarrollo de
+                                proyectos residenciales, comerciales e
+                                industriales, ofreciendo
+                                soluciones integrales en:
+                            </p>
+                            <ul class="list-unstyled ps-3 text-muted">
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Concreto</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Muros
+                                    y Cielos en Drywall</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Pavimento</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Infraestructura
+                                    eléctrica</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Instalaciones
+                                    hidráulicas</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Mantenimiento
+                                    de obra civil</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-success me-2"></i>Vaciado
+                                    de pisos de alta resistencia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-1 p-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/01.jpg"
+                            class="card-img-top" alt="." height="320px">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/02.jpg"
+                            class="card-img-top" alt="." height="320px"
+                            width="auto">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/03.jpg"
+                            class="card-img-top" alt="..." height="320px">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/04.jpg"
+                            class="card-img-top" alt="..." height="320px">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/05.webp"
+                            class="card-img-top" alt="..." height="320px">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img especialitas/06.png"
+                            class="card-img-top" alt="..." height="320px">
+                    </div>
+                </div>
+            </div>
+
+            <!--graficas informacion adicional-->
+
+            <div class="container shadow mb-4 border-0 text-center ">
+                <h1 class="text-center mb-5">Avance del Sector Construcción en el Quindío</h1>
+                <div class="row align-items-start">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <h4>Crecimiento Anual (2018 – 2023)</h4>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <h4>Proyectos por Municipio</h4>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <h4>Distribución por Tipo de Construcción</h4>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <header>
+                <section class="bg-white py-5">
+                    <div class="container text-center">
+                        <h1>Construcciones WLJ Construimos Tu Futuro</h1>
+                        <p><h3>Mas allá del concreto: el compromiso con la
+                                excelencia</h3></p>
+                        <a href="#contacto"
+                            class="btn btn-warning mt-3">Solicita una
+                            Cotización</a>
+                    </div>
+                </section>
+            </header>
+
+            <!-- Sección de Servicios -->
+            <section id="servicios" class="py-5"
+                style="background-color: burlywood;">
+                <div class="container">
+                    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100"
+                                style="background-color: beige;">
+                                <a href="servicios.html">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Construcción
+                                            Residencial</h5>
+                                        <p class="card-text">Casas, apartamentos
+                                            y
+                                            viviendas
+                                            rurales con los más altos
+                                            estándares de calidad.</p>
+                                    </div></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100"
+                                style="background-color: beige;">
+                                <a href="servicios.html">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Obra
+                                            Comercial</h5>
+                                        <p class="card-text">Locales, oficinas y
+                                            espacios comerciales a medida.</p>
+                                    </div></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100"
+                                style="background-color: beige;">
+                                <a href="servicios.html">
+                                    <div class="card-body">
+                                        <h5
+                                            class="card-title">Remodelaciones</h5>
+                                        <p class="card-text">Renovamos espacios
+                                            para darles una nueva vida.</p>
+                                    </div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section id="contacto" class="py-5"
+                style="background-color: #f8f9fa;">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-uppercase"
+                            style="color: #c16a24;">Contáctanos</h2>
+                        <p class="text-muted">¿Tienes un proyecto en mente?
+                            Escríbenos y te responderemos pronto.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label fw-semibold">Nombre
+                                            completo</label>
+                                        <input type="text"
+                                            class="form-control border-0 shadow-sm"
+                                            placeholder="Tu nombre">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label
+                                            class="form-label fw-semibold">Correo
+                                            electrónico</label>
+                                        <input type="email"
+                                            class="form-control border-0 shadow-sm"
+                                            placeholder="tucorreo@email.com">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label
+                                            class="form-label fw-semibold">Mensaje</label>
+                                        <textarea
+                                            class="form-control border-0 shadow-sm"
+                                            rows="5"
+                                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit"
+                                            class="btn btn-lg text-white mt-4"
+                                            style="background-color: #c16a24;">Enviar
+                                            Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                style="background-color: #121212; color: #e0e0e0; padding: 40px 20px; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
+                <div
+                    style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
+                    <!-- Logo con fondo igual al footer -->
+                    <div
+                        style="flex: 0 1 150px; background-color: #121212; display: inline-block; padding: 10px;">
+                        <img src="icono/icono-removebg-preview.png"
+                            alt="WLJ Construcciones"
+                            style="max-width: 150px; display: block;">
+
+                    </div>
+
+                    <!-- Contacto -->
+                    <div
+                        style="flex: 1 1 300px; border-left: 1px solid #333; padding-left: 20px; color: #c16a24;">
+                        <h3
+                            style="font-weight: bold; margin-bottom: 15px;">CONTÁCTANOS</h3>
+                        <p style="margin: 8px 0;">
+                            <span
+                                style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-mobile-alt"></i> Celular
+                            </span><br>
+                            +57 (305) 9207458
+                        </p>
+                        <p style="margin: 8px 0;">
+                            <span
+                                style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-phone-alt"></i> Teléfono
+                            </span><br>
+                            (6) 7420017
+                        </p>
+                    </div>
+
+                    <!-- Email, Dirección y redes -->
+                    <div
+                        style="flex: 1 1 300px; border-left: 1px solid #333; padding-left: 20px; color: #c16a24;">
+                        <p
+                            style="margin: 8px 0; display: flex; align-items: center; gap: 8px; font-weight: 600;">
+                            <i class="fas fa-envelope"></i> E-mail
+                        </p>
+                        <p
+                            style="margin: 0 0 15px 26px;">proyectos@wljsconstrucciones.com</p>
+
+                        <p
+                            style="margin: 8px 0; display: flex; align-items: center; gap: 8px; font-weight: 600;">
+                            <i class="fas fa-map-marker-alt"></i> Dirección
+                        </p>
+                        <p style="margin: 0 0 15px 26px;">CR 25 22 290 Calarcá,
+                            Quindio</p>
+
+                        <div style="display: flex; gap: 15px; font-size: 24px;">
+                            <a href="#" style="color: #c16a24;"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="color: #c16a24;"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/573017340763" target="_blank"
+                                style="color: #c16a24;"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="text-align: center; margin-top: 40px; font-size: 12px; color: #555;">
+                    © 2025 WLJ Construcciones | Todos los derechos reservados.
+                </div>
+            </footer>
+
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+                crossorigin="anonymous"></script>
+            <script src="index.js"></script>
+        </body>
+    </html>
